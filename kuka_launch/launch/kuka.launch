@@ -1,0 +1,25 @@
+<launch>
+<!-- Kuka driver node -->
+<node pkg="kuka_node" type="node" name="kuka_driver" args="" output="screen"/>
+
+<!-- Load the model onto parameter server -->
+<param name="kuka_description" textfile="$(find kuka_node)/resources/kuka-kr5-r850.dae" />
+<!--
+<param name="kuka_description" textfile="$(find kuka_node)/resources/schunk-lwa3.dae" />
+-->
+
+<!-- A robot state publisher to manage FK transforms -->
+<node pkg="robot_state_publisher" type="state_publisher" name="kuka_state_publisher" output="screen" level="debug">
+  <remap from="robot_description" to="kuka_description" />
+  <remap from="joint_states" to="kuka_state" />
+</node>
+
+<!-- Documention
+<sphinxdoc><![CDATA[
+
+Starts a Kuka node for receiving trajectories and publishin Kuka state, 
+and starts a state publisher with the Kuka URDF/Collada.
+
+]]></sphinxdoc> 
+-->
+</launch>

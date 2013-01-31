@@ -1,0 +1,17 @@
+<package>
+  <description brief="kuka_launch">
+
+     kuka_launch
+
+  </description>
+  <author>Chris Burbridge</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/kuka_launch</url>
+  <depend package="kuka_node"/>
+  <depend package="robot_state_publisher"/>
+  <depend package="kuka_sim"/>
+
+</package>
+
+

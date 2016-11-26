@@ -1,3 +1,0 @@
-trajectory_msgs/JointTrajectory new_trajectory
----
-std_msgs/Bool success

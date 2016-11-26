@@ -1,0 +1,5 @@
+trajectory_msgs/JointTrajectory trajectory
+---
+std_msgs/Bool error
+---
+std_msgs/Float32 percentage

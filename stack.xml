@@ -1,9 +1,0 @@
-<stack>
-  <description brief="kuka">kuka</description>
-  <author>Maintained by Chris Burbridge</author>
-  <license>BSD</license>  
-  <review status="unreviewed" notes=""/>
-  <url>http://ros.org/wiki/kuka</url>
-  <depend stack="ros" />
-
-</stack>

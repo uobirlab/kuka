@@ -1,8 +1,16 @@
 kuka
 ====
 
-ROS driver for the Kuka R850 industrial arm.
+ROS driver for the Kuka R850 industrial arm. 
 
+Migration from ROSBUID to CATKIN ROS indigo version
+original from : https://github.com/uobirlab/kuka
+Chris Burbridge   cburbridge@gmail.com
+
+ROS indigo version
+Johnson  schwarmcyc@hotmail.com
+
+ 
 This stack comprises of three packages:
 
 kuka_node
